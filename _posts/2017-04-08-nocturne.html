@@ -1,0 +1,541 @@
+
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- Website Design By: www.happyworm.com -->
+<title>Nocturne</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="/dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="/dist/add-on/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	var myPlaylist = new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_N",
+		cssSelectorAncestor: "#jp_container_N"
+	}, [
+		{
+		   title:"Nocturne",
+				artist:"Quetzal Eckhart",
+				mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/nocturne.mp3",
+				poster: "http://data.elmisterio.org/assets/images/9.jpg"
+		}
+	], {
+		playlistOptions: {
+			enableRemoveControls: true
+		},
+		swfPath: "/dist/jplayer",
+		supplied: "webmv, ogv, m4v, oga, mp3",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		audioFullScreen: true
+	});
+
+	// Click handlers for jPlayerPlaylist method demo
+
+	// Audio mix playlist
+
+	$("#playlist-setPlaylist-audio-mix").click(function() {
+		myPlaylist.setPlaylist([
+			{
+			title:"Pictures At An Exhibition - Mussorgsky",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/pictures-at-an-exhibition.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{				
+				title:"Adagio",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/adagio.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+					title:"Andalouse",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/andalouse.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+					title:"Meditation",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/meditation.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+				title:"Dvorak",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/dvorak.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+                title:"Whistles",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/whistles.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+                title:"John Dowland Songs",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/dowland.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+                title:"Nocturne - Chopin",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/nocturne.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+                title:"Anandamurti Melodies",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/anandamurti.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+                title:"William Enckhausen plays Heinrich Enckhausen, Handel, and Telemann",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/enckhausen.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+                title:"Reverie - Debussy",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/reverie.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+                title:"Dance Of The Blessed Spirits",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/blessed-spirits.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+                title:"Los Doraditos",
+			artist:"Quetzal Eckhart",
+			mp3:"http://data.elmisterio.org/music/Contemplations-On-A-Quena/los-doraditos.mp3",
+			poster: "http://elmisterio.org/assets/images/cross-quena.jpg"                                                                                     
+			}
+		]);
+	});
+
+	// Video mix playlist
+
+	$("#playlist-setPlaylist-video-mix").click(function() {
+		myPlaylist.setPlaylist([
+			{
+			    title:"Govinda",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/govinda.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+            {
+			    title:"Topilejo",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/topilejo.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Padmasambhava",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/padmasambhava.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Baba Nam Kevalam",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/babanamkevalam.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Soja",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/soja.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Om Ah Hum Vajra Guru",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/om-ah-hum-vajra-guru.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Nikte Ha Kiirtan",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/nikteha.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Reverie Kiirtan",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/reverie-kiirtan.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Desierto",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/desierto2.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Tiny Green Island",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/tiny-green-island.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"La Gracia",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/gracia.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			},
+			{
+				title:"Los Doraditos",
+				artist:"El Misterio",
+				mp3:"http://data.elmisterio.org/music/Kiirtan-El-Misterio/los-doraditos.mp3",
+				poster: "http://elmisterio.org/assets/images/kiirtan.jpg"
+			}
+		]);
+	});
+
+	// Media mix playlist
+
+	$("#playlist-setPlaylist-media-mix").click(function() {
+		myPlaylist.setPlaylist([
+			{
+				title:"Gavotte And Minuet",
+				artist:"Quetzal Eckhart",
+				mp3:"http://data.elmisterio.org/music/Bach-On-Bamboo/gavotte-minuet.mp3",
+				poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+				title:"Air and Gavotte",
+				artist:"Quetzal Eckhart",
+				mp3:"http://data.elmisterio.org/music/Bach-On-Bamboo/air-gavotte.mp3",
+				poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+				title:"Christmas Oratorio",
+				artist:"Quetzal Eckhart",
+				mp3:"http://data.elmisterio.org/music/Bach-On-Bamboo/christmas-oratorio.mp3",
+				poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+				title:"Sonata in B-minor",
+				artist:"Quetzal Eckhart",
+				mp3:"http://data.elmisterio.org/music/Bach-On-Bamboo/sonata-b-minor.mp3",
+				poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			},
+			{
+				title:"Minuet, Air, and Bouree",
+				artist:"Quetzal Eckhart",
+				mp3:"http://data.elmisterio.org/music/Bach-On-Bamboo/minuet-air-bouree.mp3",
+				poster: "http://elmisterio.org/assets/images/cross-quena.jpg"
+			}
+		]);
+	});
+
+	
+
+
+	// The remove commands
+
+	$("#playlist-remove").click(function() {
+		myPlaylist.remove();
+	});
+
+	$("#playlist-remove--2").click(function() {
+		myPlaylist.remove(-2);
+	});
+	$("#playlist-remove--1").click(function() {
+		myPlaylist.remove(-1);
+	});
+	$("#playlist-remove-0").click(function() {
+		myPlaylist.remove(0);
+	});
+	$("#playlist-remove-1").click(function() {
+		myPlaylist.remove(1);
+	});
+	$("#playlist-remove-2").click(function() {
+		myPlaylist.remove(2);
+	});
+
+	// The shuffle commands
+
+	$("#playlist-shuffle").click(function() {
+		myPlaylist.shuffle();
+	});
+
+	$("#playlist-shuffle-false").click(function() {
+		myPlaylist.shuffle(false);
+	});
+	$("#playlist-shuffle-true").click(function() {
+		myPlaylist.shuffle(true);
+	});
+
+	// The select commands
+
+	$("#playlist-select--2").click(function() {
+		myPlaylist.select(-2);
+	});
+	$("#playlist-select--1").click(function() {
+		myPlaylist.select(-1);
+	});
+	$("#playlist-select-0").click(function() {
+		myPlaylist.select(0);
+	});
+	$("#playlist-select-1").click(function() {
+		myPlaylist.select(1);
+	});
+	$("#playlist-select-2").click(function() {
+		myPlaylist.select(2);
+	});
+
+	// The next/previous commands
+
+	$("#playlist-next").click(function() {
+		myPlaylist.next();
+	});
+	$("#playlist-previous").click(function() {
+		myPlaylist.previous();
+	});
+
+	// The play commands
+
+	$("#playlist-play").click(function() {
+		myPlaylist.play();
+	});
+
+	$("#playlist-play--2").click(function() {
+		myPlaylist.play(-2);
+	});
+	$("#playlist-play--1").click(function() {
+		myPlaylist.play(-1);
+	});
+	$("#playlist-play-0").click(function() {
+		myPlaylist.play(0);
+	});
+	$("#playlist-play-1").click(function() {
+		myPlaylist.play(1);
+	});
+	$("#playlist-play-2").click(function() {
+		myPlaylist.play(2);
+	});
+
+	// The pause command
+
+	$("#playlist-pause").click(function() {
+		myPlaylist.pause();
+	});
+
+	// Changing the playlist options
+
+	// Option: autoPlay
+
+	$("#playlist-option-autoPlay-true").click(function() {
+		myPlaylist.option("autoPlay", true);
+	});
+	$("#playlist-option-autoPlay-false").click(function() {
+		myPlaylist.option("autoPlay", false);
+	});
+
+	// Option: enableRemoveControls
+
+	$("#playlist-option-enableRemoveControls-true").click(function() {
+		myPlaylist.option("enableRemoveControls", true);
+	});
+	$("#playlist-option-enableRemoveControls-false").click(function() {
+		myPlaylist.option("enableRemoveControls", false);
+	});
+
+	// Option: displayTime
+
+	$("#playlist-option-displayTime-0").click(function() {
+		myPlaylist.option("displayTime", 0);
+	});
+	$("#playlist-option-displayTime-fast").click(function() {
+		myPlaylist.option("displayTime", "fast");
+	});
+	$("#playlist-option-displayTime-slow").click(function() {
+		myPlaylist.option("displayTime", "slow");
+	});
+	$("#playlist-option-displayTime-2000").click(function() {
+		myPlaylist.option("displayTime", 2000);
+	});
+
+	// Option: addTime
+
+	$("#playlist-option-addTime-0").click(function() {
+		myPlaylist.option("addTime", 0);
+	});
+	$("#playlist-option-addTime-fast").click(function() {
+		myPlaylist.option("addTime", "fast");
+	});
+	$("#playlist-option-addTime-slow").click(function() {
+		myPlaylist.option("addTime", "slow");
+	});
+	$("#playlist-option-addTime-2000").click(function() {
+		myPlaylist.option("addTime", 2000);
+	});
+
+	// Option: removeTime
+
+	$("#playlist-option-removeTime-0").click(function() {
+		myPlaylist.option("removeTime", 0);
+	});
+	$("#playlist-option-removeTime-fast").click(function() {
+		myPlaylist.option("removeTime", "fast");
+	});
+	$("#playlist-option-removeTime-slow").click(function() {
+		myPlaylist.option("removeTime", "slow");
+	});
+	$("#playlist-option-removeTime-2000").click(function() {
+		myPlaylist.option("removeTime", 2000);
+	});
+
+	// Option: shuffleTime
+
+	$("#playlist-option-shuffleTime-0").click(function() {
+		myPlaylist.option("shuffleTime", 0);
+	});
+	$("#playlist-option-shuffleTime-fast").click(function() {
+		myPlaylist.option("shuffleTime", "fast");
+	});
+	$("#playlist-option-shuffleTime-slow").click(function() {
+		myPlaylist.option("shuffleTime", "slow");
+	});
+	$("#playlist-option-shuffleTime-2000").click(function() {
+		myPlaylist.option("shuffleTime", 2000);
+	});
+
+	// Equivalent commands
+
+	$("#playlist-equivalent-1-a").click(function() {
+		myPlaylist.add({
+			title:"Your Face",
+			artist:"The Stark Palace",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
+			poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
+		}, true);
+	});
+
+	$("#playlist-equivalent-1-b").click(function() {
+		myPlaylist.add({
+			title:"Your Face",
+			artist:"The Stark Palace",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
+			poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
+		});
+		myPlaylist.play(-1);
+	});
+
+	// AVOID COMMANDS
+
+	$("#playlist-avoid-1").click(function() {
+		myPlaylist.remove(2); // Removes the 3rd item
+		myPlaylist.remove(3); // Ignored unless removeTime=0: Where it removes the 4th item, which was originally the 5th item.
+	});
+
+
+});
+//]]>
+</script>
+</head>
+<body>
+<p style="margin-top:1em;">
+				
+
+<div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player">
+	<div class="jp-type-playlist">
+		<div id="jquery_jplayer_N" class="jp-jplayer"></div>
+		<div class="jp-gui">
+			<div class="jp-video-play">
+				<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+			</div>
+			<div class="jp-interface">
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				<div class="jp-controls-holder">
+					<div class="jp-controls">
+						<button class="jp-previous" role="button" tabindex="0">previous</button>
+						<button class="jp-play" role="button" tabindex="0">play</button>
+						<button class="jp-next" role="button" tabindex="0">next</button>
+						<button class="jp-stop" role="button" tabindex="0">stop</button>
+					</div>
+					<div class="jp-volume-controls">
+						<button class="jp-mute" role="button" tabindex="0">mute</button>
+						<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+						<div class="jp-volume-bar">
+							<div class="jp-volume-bar-value"></div>
+						</div>
+					</div>
+					<div class="jp-toggles">
+						<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+						<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+						<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+					</div>
+				</div>
+				<div class="jp-details">
+					<div class="jp-title" aria-label="title">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<div class="jp-playlist">
+			<ul>
+				<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+			
+&nbsp;
+
+
+&nbsp;
+<code></code><br />
+&nbsp;
+<li><a href="http://data.elmisterio.org/music/Contemplations-On-A-Quena/nocturne.mp3">Download Nocturne</a></li>
+
+<li>According to yoga and other schools of classical Indian philosophy there are 4 main states of consciousness: wakefulness, dream, sleep, and turiiya- total union with the Atman. Wakefulness is where the sensory-intellectual mind is entertained by perceptions of the physical and social world as well as our abstract thoughts about these realms. The dream state is mostly a recycling of these perceptions and memories; most impressions are discarded through jumbled dream scenarios whereas some dreams may actually be attempting to reveal aspects of one’s inner life beyond the sensory-intellectual mind. The sleeping state of consciousness is where the sensory-intellectual mind and even its activities of dream are suspended. Most people have no awareness of what happens in this state of consciousness, rather it is experienced as a state of unconsciousness. This is because most people have no practical, living awareness of any reality beyond the sensory-intellectual mind with the names and forms of the things we experience in the mundane world. It is only when meditative contemplation is highly developed and one has a notion of an inner I-Witness (Atman) that it is possible to know if there are subtle states of consciousness within deep sleep. This calm state of pure observation continues to witness the apparently dormant mind throughout the night while one is sleeping. And finally there is turiiya, where the mind is in union with the Atman, the I-Witness. Mind is a “relative, functional, ever-changing entity,” while the Atman is immortal, unchanging consciousness. It is due to the reflection of the Atman upon the mind that one is able to witness all states of consciousness related to the mind-body system- wakefulness, dream, and sleep. Turiiya doesn’t depend on any state of mind or body and is not a product of the nervous or endocrine systems. Turiiya is the Supreme Subjectivity of the Atman that gazes down upon the states of objective mental awareness.</li>
+&nbsp;
+
+<li>The Atman is eternally Self-existent. All things depend on It for their recognition, but Atman depends on no thing. Atman sees and makes things known yet still exists when nothing is “seen.” One doesn’t discern the existence of the Atman in a practical manner in states of wakeful, sensory-intellectual awareness nor in the dream state. How does one know if this I-Witness really exists? It is through the sincere contemplation of these 4 states of awareness that one discerns the Witness that sees them clearly. Meditation makes the mind just as calm as if one were in a state of deep sleep, yet one is “awake” and acutely conscious. Developed meditators have been known to enter in Delta and Theta states of EEG, which peope usually only enter into when asleep. This deep and relaxed “awakeness” may continue all through the day and night. When I go to sleep there is the sound of Om and when I lose consciousness I enter a womb of sound and color and feel a soothing feeling around the pineal gland. When I awaken I recall that there was a Witness all through the night. Even if I awake in hell (which has happened recently), I can’t deny that this blissful entity has accompanied me all through the night. I only forget this when I begin to think too much and believe that the world really is “out there” somewhere instead of a subjective spiritual creation that my every thought, feeling, and action participates with. Such self-created worlds can easily become hells if we lose sight of the base of mental existence in the Witness. The Atman knows not of these problems or worries and if the mind directs itself toward the inner bliss of the Atman then the mind too will begin to let go of its worries and become more like its essence, still and calm. Mind is a certain mental wave-length and frequency. Atman is an infinite wave-length, a vibration without vibration that takes all created vibrations back into Its silence and wholeness. Om is the interplay between the vibration of mind and the silence of infinity. Om is the sound of silence.  It is both here and there. It takes one into silence but also fills the noisy, unharmonized mind with its sweet tone that rises upward beyond the created universe.</li>
+&nbsp;
+
+<li>One begins to see the world as represented through one’s mind as an objective mental creation, a well-designed narrative that interacts with the entire universe. Individual life becomes part of the universal story of humanity. One’s existential feeling is no longer exclusively in the body or even in one’s ideas about oneself. Identity extends into all things, places, and entities. Another entity seems to be living within one; not an outside invader but an inner guide and companion whose only purpose is to make you whole, to see behind the myriad facades of the mind to discern the truth above. It is not to say that one gives up on external life in the world of mind, but one begins to see this show as something a little less lonesome and sorrowful than the life of the separate ego trapped in its own little mental confines while awake, dreaming, and sleeping. The ever graceful and loving presence of the I-Witness gives one true confidence and identity and makes it more difficult to get lost in the labyrinths of mind.</li>
+&nbsp;
+
+<li>The Atman is omni-telepathic consciousness because the Atman is the Supreme Subjectivity behind the entire universe as well as the I-Witness to the human mind.  If we look deeply into the origins of our "I" in tranquility, we can see that the individual "I" is essentially the same as the universal "I", or the Supreme Subjectivity.  All souls are one.  Only the placid heart and tranquil mind grasps this mysticism.  By being aware that you are "seen" by this I-Witness, the entire mind may be gazed upon from this sublime stance.</li>
+&nbsp;
+
+<li>Yogis are aware of the Atman in all states of not just waking consciousness but also during the states of dream and deep sleep. I can't say I am always conscious while sleeping, but I am certain that a yogi snoring is really laughing with eternal joy. Sleep is seen so perfectly and clearly, sleep awakes into conscious sleep.  Snoring is  bliss absorbed and you giggle and laugh, but the laughing is really snoring.  Expecting laughter and a snore escapes; and so you laugh even louder, and thus snore louder.  </li>
+&nbsp;
+
+<li>A yogis sleep is an eternal play of snoring and inner, joyful laughter.  Om is the eternal hum behind snoring and laughter and all that vibrates with cosmic joy.   OM produces all sound and absorbs all silence.  Awake and  you still hear the eternal hum through the hummingbirds.  
+Good day, Good Night</li>
+
+&nbsp;
+
+<li>listen to other albums and tracks:  <a href="http://elmisterio.org/la-flauta-de-bambu"> La Flauta De Bambu</a></li>
+
+
+
+
+
+

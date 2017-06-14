@@ -1,0 +1,30 @@
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+<<<<<<< HEAD
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></li>
+=======
+        <a class="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+        <ul class="visible-links">
+>>>>>>> 23349e14f80c26bf1ab94e44281434e276013493
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = site.url | append: site.baseurl %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+<<<<<<< HEAD
+=======
+        <button><div class="navicon"></div></button>
+>>>>>>> 23349e14f80c26bf1ab94e44281434e276013493
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>

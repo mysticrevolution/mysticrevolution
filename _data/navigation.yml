@@ -1,0 +1,32 @@
+# main links
+main:
+<<<<<<< HEAD
+ 
+  - title: "Natural Mysticism"
+    url: /natural-mysticism/
+  - title: "Musica"
+    url: /la-flauta-de-bambu/
+  - title: "Books"
+    url: /download-complete-works/
+  - title: "Anahata"
+    url: /anahata
+  - title: "Rebellion"
+    url: /tantric-rebellion-and-kundalini
+  - title: "Subscribe RSS"
+    url: https://mysticrevolution.github.io/feed.xml
+
+
+
+
+=======
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+>>>>>>> 23349e14f80c26bf1ab94e44281434e276013493
